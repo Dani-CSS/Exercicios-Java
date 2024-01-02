@@ -10,10 +10,12 @@ public class Brinde {
 		System.out.println("Qual a sua idade?");
 		int idade = scan.nextInt();
 		
-		if(idade < 18) {
+		if(idade > 0 && idade < 18) {
 			System.out.println("Vai ganhar o valor em dinheiro");
-		} else {
+		} else if (idade > 0 && idade >= 18){
 			System.out.println("Vai ganhar o Whisky");
+		} else {
+			System.out.println("Idade informada inválida!");
 		}
 
 	}
